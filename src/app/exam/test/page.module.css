@@ -1,0 +1,52 @@
+.page {
+  background-color: #f9fafb;
+  min-height: calc(100vh - 73px);
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.questionSection {
+  width: 100%;
+}
+
+.navigatorSection {
+  width: 100%;
+}
+
+.navigatorInner {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .questionSection {
+    flex: 1 1 65%;
+  }
+
+  .navigatorSection {
+    flex: 1 1 35%;
+  }
+
+  .navigatorInner {
+    position: sticky;
+    top: 1.5rem;
+  }
+}
